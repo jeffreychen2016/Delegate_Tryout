@@ -23,6 +23,10 @@ namespace Delegate
             // not required if using lambda exprecess
             //Employee.PromoteEmployee(Employees, isPromotable);
             Employee.PromoteEmployee(Employees, emp => emp.Experience > 2);
+
+            // Nathan's method
+            // Employee.PromoteEmployee(Employees, EvaluateEmployee);
+
         }
 
         //s2: create the actual method
@@ -38,6 +42,9 @@ namespace Delegate
         //        return false;
         //    }
         //}
+
+        // Nathan's method
+        // static bool EvaluateEmployee(Employee emp) => emp.Experience > 2;
     }
 
 
